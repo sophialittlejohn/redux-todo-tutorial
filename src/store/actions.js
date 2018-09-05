@@ -1,6 +1,4 @@
-export const addTodoAction = content =>  {
-    return {
-        type: 'ADD_TODO',
-        payload: content
-    }
-}
+export const addTodoAction = content => ({
+    type: 'ADD_TODO',
+    payload: content
+})
