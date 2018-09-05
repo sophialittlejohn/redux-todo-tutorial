@@ -3,7 +3,7 @@ const todoListReducer = (state = {todos: []}, action) => {
         case 'ADD_TODO':
             const newState = [...state.todos]
             newState.push(action.payload)
-            return {todos: newState}
+            return {...state, todos: newState}
         default:
             return state
     }

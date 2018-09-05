@@ -23,7 +23,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props)
     return (
       <div className="App">
         <div>
@@ -56,7 +55,6 @@ class App extends Component {
 }
 
 const mapStateToProps = state => {
-  console.log('state', state)
   return ({
     todos: state.todos
   })
